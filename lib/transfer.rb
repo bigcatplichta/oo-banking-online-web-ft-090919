@@ -15,5 +15,6 @@ class Transfer
     if self.valid?
       @sender.balance -= amount
       @receiver.deposit(amount)
+    end
   end 
 end
