@@ -15,6 +15,7 @@ class Transfer
     if self.valid?
       @sender.balance -= amount
       @receiver.deposit(amount)
+      self.status = "complete"
     end
   end 
 end
